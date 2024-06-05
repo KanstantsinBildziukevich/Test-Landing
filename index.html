@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOREMIPSUM.NET</title>
+    <link rel="icon" href="./icons/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">LOREMIPSUM.<span class="blue-text">NET</span></div>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link active">Бизнес</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Цены</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Оформить заказ</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="info">
+                <h1 class="info__title"><span class="blue-text">Lorem Ipsum</span> Dolor Sit<br> Ametconsectetur <span class="blue-text">Adipiscing</span></h1>
+                <div class="info__content">
+                    <p class="info__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                    <ul class="info__list">
+                        <li class="info__list-item">Totam rem aperiam eaque ipsa</li>
+                        <li class="info__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+                        <li class="info__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                    </ul>
+                </div>
+                <div class="info__buttons">
+                    <button class="button">Заказать</button>
+                    <button class="button button--secondary">Подробнее</button>
+                </div>
+            </section>
+
+            <section class="order">
+                <div class="order__title-container">
+                    <h2 class="order__title">Оформление <span class="blue-text">Заказа</span></h2>
+                    <p class="order__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                </div>
+                <div class="roadmap">
+                    <div class="roadmap__block-first dotted">
+                        <img src="./icons/search.svg" class="roadmap__block-image" alt="search icon">
+                        <p class="roadmap__block-text">Lorem ipsum dolor<br> sit amet</p>
+                    </div>
+                    <div class="roadmap__block dotted">
+                        <img src="./icons/percent.svg" class="roadmap__block-image" alt="percent icon">
+                        <p class="roadmap__block-text">Сonsecteturadi<br> piscing elit</p>
+                    </div>
+                    <div class="roadmap__block dotted">
+                        <img src="./icons/fileplus.svg" class="roadmap__block-image" alt="file icon">
+                        <p class="roadmap__block-text">Sed do eiusmod<br> tempor</p>
+                    </div>
+                    <div class="roadmap__block dotted">
+                        <img src="./icons/mail.svg" class="roadmap__block-image" alt="mail icon">
+                        <p class="roadmap__block-text">Esse cillum dolore<br> eu fugiat</p>
+                    </div>
+                    <div class="roadmap__block-last dotted">
+                        <img src="./icons/banknote.svg" class="roadmap__block-image" alt="banknote icon">
+                        <p class="roadmap__block-text">Excepteur sint occaecat<br> cupidatat non proident</p>
+                    </div>
+                </div>
+                <form class="order__form">
+                    <div class="order__inputs-group">
+                        <div class="order__input">
+                            <label for="system-type"></label>
+                            <select id="system-type" name="system-type" class="order__form-select" required>
+                                <option value="" disabled selected hidden>Выберите тип системы</option>
+                                <option value="system1">Система 1</option>
+                                <option value="system2">Система 2</option>
+                                <option value="system3">Система 3</option>
+                            </select>
+                        </div>
+                        <div class="order__input">
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" class="order__form-input" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="order__input">
+                            <label for="name"></label>
+                            <input type="text" id="name" name="name" class="order__form-input" placeholder="Ваше имя">
+                        </div>
+                    </div>
+                    <div class="order__form-group">
+                        <div class="range__container">
+                            <div class="range__label-container">
+                                <label for="range">Sed ut perspiciatis, unde omnis iste natus</label>
+                                <span id="range__value" class="range__value">75%</span>
+                            </div>
+                            <input type="range" id="range" name="range" class="range__input" min="0" max="100" step="5" value="75">
+                        </div>
+                        <button class="file__button">
+                            <img src="./icons/file.svg" alt="file icon">
+                            Прикрепить файл
+                        </button>
+                    </div>
+                    <button type="submit" class="button button--submit">Отправить</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__copy footer-item">© 2018 «LOREMIPSUM.NET» Все права защищены.</p>
+                <div class="footer__payments footer-item">
+                    <div class="footer__payment-block">
+                        <img src="./icons/qiwi.svg" alt="QIWI icon" class="footer__payment-icon">
+                        <a href="mailto:bankinfo@qiwi.ru" class="footer__payment-method">Qiwi wallet</a>
+                    </div>
+                    <div class="footer__payment-block">
+                        <img src="./icons/yandex.svg" alt="Yandex icon" class="footer__payment-icon">
+                        <a href="https://t.me/yoomoneynews" class="footer__payment-method" target="_blank">Yandex Money</a>
+                    </div>
+                    <div class="footer__payment-block">
+                        <img src="./icons/webmoney.svg" alt="WebMoney icon" class="footer__payment-icon">
+                        <a href="mailto:pr@webmoney.com" class="footer__payment-method">Web Money</a>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <div class="footer__payment-block">
+                        <img src="./icons/mailinfo.svg" alt="Mail icon" class="footer__payment-icon">
+                        <a href="mailto:info@loremipsum.net" class="footer__payment-method footer__link">info@loremipsum.net</a>
+                    </div>
+                    <div class="footer__payment-block">
+                        <img src="./icons/vk.svg" alt="VKontakte icon" class="footer__payment-method">
+                        <a href="https://vk.com/loremipsum_jd" class="footer__payment-method footer__link" target="_blank">Мы вконтакте</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
